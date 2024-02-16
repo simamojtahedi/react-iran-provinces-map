@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.iran-provinces-map-wrapper {
+  overflow: hidden;
+  position: relative;
+  direction: ltr !important;
+}
+
+.iran-provinces-map-wrapper path,
+.iran-provinces-map-wrapper polygon,
+.iran-provinces-map-wrapper polyline {
+  outline: none !important;
+  cursor: pointer;
+  fill: #eee;
+  stroke: #c5c5c5;
+  /* transition: all 0.3s; */
+}
+
+.iran-provinces-map-wrapper g path {
+  stroke: none !important;
+  fill: inherit !important;
+}
+
+.iran-provinces-map-wrapper g,
+.iran-provinces-map-wrapper text,
+.iran-provinces-map-wrapper rect {
+  pointer-events: none !important;
+  font-family: inherit !important;
+  font-weight: 700;
+}
+
+.react-map-water {
+  fill: #7bdaff !important;
+}
+
+.react-map-badge {
+  overflow: hidden;
+  min-width: 95px;
+  text-align: right;
+  border-radius: 4px;
+  font-family: inherit;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.react-map-badge h2 {
+  margin: 0;
+  padding: 7px;
+  font-size: 12px;
+  background-color: #e6e6e6;
+}
+
+.react-map-badge h3 {
+  font-size: 13px;
+  margin: 0;
+  padding: 7px 10px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-map-badge h3 span {
+  flex: 1;
+  direction: rtl;
+}
