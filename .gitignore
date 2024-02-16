@@ -1,6 +1,6 @@
 /node_modules
+/.vscode
 dist
 yarn-error.log
 npm-debug.log
 .parcel-cache
-.vscode
