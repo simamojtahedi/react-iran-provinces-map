@@ -45,8 +45,9 @@ export default App;
 
 ## Data schema
 
-You can see each privince data in this link:
-`[Provinces data scheme](https://github.com/simamojtahedi/react-iran-provinces-map/blob/master/src/data/defaultData.ts)`
+You can see each province data in this link:
+<br />
+https://github.com/simamojtahedi/react-iran-provinces-map/blob/master/src/data/defaultData.ts
 
 You can use this data for 'tehran' as selected province:
 

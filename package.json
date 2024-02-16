@@ -1,6 +1,6 @@
 {
   "name": "react-iran-provinces-map",
-  "version": "1.0.2",
+  "version": "0.0.1",
   "description": "An interactive and responsive SVG map of Iran's provinces",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

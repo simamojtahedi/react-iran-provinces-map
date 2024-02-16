@@ -3,3 +3,4 @@ dist
 yarn-error.log
 npm-debug.log
 .parcel-cache
+.vscode

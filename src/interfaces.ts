@@ -32,3 +32,7 @@ export interface MapProps {
   width: number | string | undefined
   textColor: string
 }
+
+export type MapPropsWithProvince = MapProps & {
+  province: string
+}

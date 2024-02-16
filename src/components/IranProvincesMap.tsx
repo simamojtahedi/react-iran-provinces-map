@@ -3,6 +3,7 @@ import { Tooltip } from 'react-tooltip'
 import { ProvinceType, selectedCityType } from '../interfaces'
 import { provinceMapData } from '../data/provinces'
 import { defaultData } from '../data/defaultData'
+import Province from './provinces'
 import './iran-provinces-map.css'
 
 const IranProvincesMap: React.FC<ProvinceType> = ({
@@ -18,7 +19,6 @@ const IranProvincesMap: React.FC<ProvinceType> = ({
 }) => {
   const mapRef = useRef(null)
 
-  const [selectedProvince, setSelectedProvince] = useState<null | React.ReactNode>(null)
   const [cityName, setCityName] = useState<null | string>(null)
   const [selectedCity, setSelectedCity] = useState<selectedCityType>({
     name: '',
@@ -122,40 +122,26 @@ const IranProvincesMap: React.FC<ProvinceType> = ({
   }
 
   useEffect(() => {
-    if (mapRef.current && selectedProvince) {
+    if (mapRef.current) {
       const mapElement = mapRef.current
       if (mapElement !== null && typeof mapElement === 'object') {
         setPathBackgrounds(mapElement)
       }
     }
-  }, [mapRef, selectedCity, selectedProvince])
+  }, [mapRef, selectedCity])
 
-  const displaySelectedProvinceComponent = async () => {
-    const capitalizedProvince = province.charAt(0).toUpperCase() + province.slice(1)
-    const { default: Component } = await import(`./provinces/${capitalizedProvince}`)
-
-    const provinceComponent = (
-      <Component
+  return (
+    <div className='iran-provinces-map-wrapper'>
+      <Province
+        province={province}
         mapRef={mapRef}
         pathClickedHandle={pathClickedHandle}
         pathMouseOverHandler={pathMouseOverHandler}
         width={width}
         textColor={textColor}
       />
-    )
-
-    return provinceComponent
-  }
-
-  useEffect(() => {
-    displaySelectedProvinceComponent().then((response) => setSelectedProvince(response))
-  }, [province])
-
-  return (
-    <>
-      {selectedProvince ? selectedProvince : 'Loading ...'}
       <Tooltip id='iran-provinces-map-tooltip' html={badge} variant='light' float style={{ padding: 0 }} />
-    </>
+    </div>
   )
 }
 
