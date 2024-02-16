@@ -153,7 +153,7 @@ const IranProvincesMap: React.FC<ProvinceType> = ({
 
   return (
     <>
-      {selectedProvince && selectedProvince}
+      {selectedProvince ? selectedProvince : 'Loading ...'}
       <Tooltip id='iran-provinces-map-tooltip' html={badge} variant='light' float style={{ padding: 0 }} />
     </>
   )
