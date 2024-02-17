@@ -1,6 +1,5 @@
 /node_modules
-/.vscode
+yarn.lock
+.parcel-cache
 dist
 yarn-error.log
-npm-debug.log
-.parcel-cache

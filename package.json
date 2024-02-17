@@ -1,23 +1,15 @@
 {
   "name": "react-iran-provinces-map",
-  "version": "0.0.1",
-  "description": "An interactive and responsive SVG map of Iran's provinces",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "version": "0.1.2",
+  "description": "Demo page of react-iran-provinces-map package",
+  "scripts": {
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simamojtahedi/react-iran-provinces-map.git"
-  },
-  "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "test": "jest --config jestconfig.json",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
   },
   "files": [
     "dist",
@@ -33,28 +25,26 @@
   ],
   "author": "Sima Mojtahedi",
   "license": "MIT",
-  "peerDependencies": {
-    "react": ">=16"
+  "bugs": {
+    "url": "https://github.com/simamojtahedi/react-iran-provinces-map/issues"
   },
+  "homepage": "https://github.com/simamojtahedi/react-iran-provinces-map#readme",
   "dependencies": {
-    "@testing-library/react": "^14.2.1",
-    "@types/jest": "^29.5.11",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
-    "@types/react": "^18.2.55",
     "eslint": "^8.55.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^29.7.0",
-    "jest-canvas-mock": "^2.5.2",
-    "jest-environment-jsdom": "^29.7.0",
-    "prettier": "^3.1.0",
+    "parcel": "^2.10.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-tooltip": "^5.25.0",
-    "ts-jest": "^29.1.1",
+    "react-iran-map": "^0.1.2",
+    "react-iran-provinces-map": "^0.1.2",
     "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
   }
 }
