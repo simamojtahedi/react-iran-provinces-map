@@ -1,28 +1,17 @@
 {
-  "name": "react-iran-provinces-map",
-  "version": "0.1.2",
-  "description": "Demo page of react-iran-provinces-map package",
+  "name": "react-iran-provinces-map-demo",
+  "version": "1.0.0",
+  "description": "Demo page for react Iran provinces map package",
   "scripts": {
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --dist-dir docs --public-url ."
+    "build": "parcel build src/index.html --dist-dir docs --public-url .",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simamojtahedi/react-iran-provinces-map.git"
   },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "keywords": [
-    "map",
-    "iran",
-    "iran-provinces-map",
-    "react-iran--provinces-map",
-    "iran-cities"
-  ],
+  "keywords": [],
   "author": "Sima Mojtahedi",
   "license": "MIT",
   "bugs": {
@@ -30,19 +19,15 @@
   },
   "homepage": "https://github.com/simamojtahedi/react-iran-provinces-map#readme",
   "dependencies": {
-    "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.13.2",
-    "@typescript-eslint/parser": "^6.13.2",
-    "eslint": "^8.55.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "parcel": "^2.10.3",
+    "@types/react": "^18.2.70",
+    "@types/react-dom": "^18.2.22",
+    "parcel": "^2.12.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-iran-map": "^0.1.2",
-    "react-iran-provinces-map": "^0.1.2",
-    "typescript": "^5.3.3"
+    "react-icons": "^5.0.1",
+    "react-iran-map": "^0.1.3",
+    "react-iran-provinces-map": "^0.1.3",
+    "typescript": "^5.4.3"
   },
   "devDependencies": {
     "process": "^0.11.10"

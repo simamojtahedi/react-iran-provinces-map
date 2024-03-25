@@ -1,7 +1,7 @@
 import React , {useState}from 'react';
 import { IranMap } from 'react-iran-map'
 import { IranProvincesMap } from "react-iran-provinces-map";
-import { provincesData } from './data';
+import { provincesData } from './data/provincesData';
 
 interface MapContainerProps {
     iranMapData: any
