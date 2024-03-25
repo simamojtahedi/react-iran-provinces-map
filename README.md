@@ -4,7 +4,7 @@ This NPM package provides interactive maps of Iran's provinces with city details
 The package includes interactive and responsive SVG maps of all 31 provinces, each containing cities with customizable values displayed on hover.
 Additionally, the background color of each city changes based on it's count, creating a visually engaging experience for users.
 
-You can use [react-iran-map](https://www.npmjs.com/package/react-iran-map) to get each province's name by clicking on Iran map.
+You can use [react-iran-map](https://www.npmjs.com/package/react-iran-map) to create Iran map and get each province's name by clicking on it.
 
 ## Installation
 
@@ -45,11 +45,10 @@ export default App;
 
 ## Data schema
 
-You can see each province data in this link:
+You can see each province data in this [link](https://github.com/simamojtahedi/react-iran-provinces-map/blob/master/src/data/defaultData.ts):
 <br />
-https://github.com/simamojtahedi/react-iran-provinces-map/blob/master/src/data/defaultData.ts
 
-You can use this data for 'tehran' as selected province:
+For example, you can use this data for 'tehran' as selected province:
 
 ```jsx
 const mapData = {
