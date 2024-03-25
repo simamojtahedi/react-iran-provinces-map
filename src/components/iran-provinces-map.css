@@ -16,7 +16,7 @@
   cursor: pointer;
   fill: #eee;
   stroke: #c5c5c5;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
 
 .iran-provinces-map-wrapper g path {

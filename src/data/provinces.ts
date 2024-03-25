@@ -1,9 +1,4 @@
-export type ProvinceMapData = {
-  [key: string]: {
-    cityName: string
-    cityFaName: string
-  }[]
-}
+export type ProvinceMapData = Record<string, { cityName: string; cityFaName: string }[]>
 
 export const provinceMapData: ProvinceMapData = {
   ardabil: [
@@ -219,7 +214,7 @@ export const provinceMapData: ProvinceMapData = {
   hormozgan: [
     { cityName: 'parsian', cityFaName: 'پارسیان' },
     { cityName: 'bandarlengeh', cityFaName: 'بندر لنگه' },
-    { cityName: 'bastak', cityFaName: ' بستگ ' },
+    { cityName: 'bastak', cityFaName: 'بستک' },
     { cityName: 'khamir', cityFaName: 'خمیر' },
     { cityName: 'bandarabas', cityFaName: 'بندر عباس' },
     { cityName: 'hajiabad', cityFaName: 'حاجی آباد' },

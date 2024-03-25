@@ -54,7 +54,7 @@ const Hormozgan: React.FC<MapProps> = ({ mapRef, pathClickedHandle, pathMouseOve
           data-tooltip-id='iran-provinces-map-tooltip'
           onMouseOver={(e: any) => pathMouseOverHandler(e)}
           onClick={(e: any) => pathClickedHandle(e.target.dataset.name)}
-          data-name='بستگ'
+          data-name='بستک'
           d='M599.33,555.38l6.03-2.34l2.37-4.15v-3.76v-5.93l-5.93-4.55l-22.35-5.74l-22.55-2.57l-9.49-2.18
 	c0,0-5.54,0.79-6.73,0c-1.19-0.79-7.12-2.97-7.12-2.97l8.51-8.9l3.16-5.34l6.53-7.12l5.74-6.92h-20.57l-3.36-2.18l-9.49-2.18
 	l-16.02-3.76l-7.12,1.38l-12.46,1.58l-20.18,1.78l-8.7,2.18l-6.33-1.38l-6.53-0.2l-8.7,0.2l-4.95,2.57l-6.92,4.95L415.47,503
