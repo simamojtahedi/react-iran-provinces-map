@@ -1,7 +1,13 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
+
+/* ⚠️ Warning: Using a global selector (*) with margin:0; padding:0; 
+   in a package can break styles in all projects that install this package. 
+   It's recommended to scope styles to specific classes instead of global reset. */
+
+
 
 .iran-provinces-map-wrapper {
   overflow: hidden;
